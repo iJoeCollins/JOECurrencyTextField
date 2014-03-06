@@ -50,8 +50,8 @@
 		D8E45ACF18C8D96400BDA5A4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D8E45AD118C8D96400BDA5A4 /* JCCurrencyTextFieldTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCCurrencyTextFieldTests.m; sourceTree = "<group>"; };
 		D8E45AD418C8D96400BDA5A4 /* GUIDE.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = GUIDE.md; sourceTree = "<group>"; };
-		D8E45AD518C8D96400BDA5A4 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		D8E45AD618C8D96400BDA5A4 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		D8E45AD518C8D96400BDA5A4 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE; path = /Users/Joe/Work/iJoe.Co/Development/Classes/JCCurrencyTextField/LICENSE; sourceTree = "<absolute>"; };
+		D8E45AD618C8D96400BDA5A4 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; name = README.md; path = /Users/Joe/Work/iJoe.Co/Development/Classes/JCCurrencyTextField/README.md; sourceTree = "<absolute>"; };
 		D8E45AE018C8D9F100BDA5A4 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D8E45AE118C8D9F100BDA5A4 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D8E45AE318C8D9F100BDA5A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -558,6 +558,7 @@
 				D8E45ADB18C8D96400BDA5A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D8E45ADC18C8D96400BDA5A4 /* Build configuration list for PBXNativeTarget "JCCurrencyTextFieldTests" */ = {
 			isa = XCConfigurationList;
@@ -566,6 +567,7 @@
 				D8E45ADE18C8D96400BDA5A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
