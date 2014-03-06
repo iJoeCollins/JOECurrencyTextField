@@ -10,18 +10,23 @@
 		D8E45AA518C8D96400BDA5A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E45AA418C8D96400BDA5A4 /* Foundation.framework */; };
 		D8E45AA718C8D96400BDA5A4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E45AA618C8D96400BDA5A4 /* CoreGraphics.framework */; };
 		D8E45AA918C8D96400BDA5A4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E45AA818C8D96400BDA5A4 /* UIKit.framework */; };
-		D8E45AAF18C8D96400BDA5A4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D8E45AAD18C8D96400BDA5A4 /* InfoPlist.strings */; };
-		D8E45AB118C8D96400BDA5A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E45AB018C8D96400BDA5A4 /* main.m */; };
-		D8E45AB518C8D96400BDA5A4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E45AB418C8D96400BDA5A4 /* AppDelegate.m */; };
-		D8E45AB818C8D96400BDA5A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8E45AB618C8D96400BDA5A4 /* Main.storyboard */; };
-		D8E45ABB18C8D96400BDA5A4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E45ABA18C8D96400BDA5A4 /* ViewController.m */; };
-		D8E45ABD18C8D96400BDA5A4 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = D8E45ABC18C8D96400BDA5A4 /* .gitignore */; };
-		D8E45ABF18C8D96400BDA5A4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8E45ABE18C8D96400BDA5A4 /* Images.xcassets */; };
 		D8E45AC618C8D96400BDA5A4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E45AC518C8D96400BDA5A4 /* XCTest.framework */; };
 		D8E45AC718C8D96400BDA5A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E45AA418C8D96400BDA5A4 /* Foundation.framework */; };
 		D8E45AC818C8D96400BDA5A4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E45AA818C8D96400BDA5A4 /* UIKit.framework */; };
 		D8E45AD018C8D96400BDA5A4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D8E45ACE18C8D96400BDA5A4 /* InfoPlist.strings */; };
 		D8E45AD218C8D96400BDA5A4 /* JCCurrencyTextFieldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E45AD118C8D96400BDA5A4 /* JCCurrencyTextFieldTests.m */; };
+		D8E45AEC18C8D9F100BDA5A4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E45AE118C8D9F100BDA5A4 /* AppDelegate.m */; };
+		D8E45AED18C8D9F100BDA5A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8E45AE218C8D9F100BDA5A4 /* Main.storyboard */; };
+		D8E45AEE18C8D9F100BDA5A4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D8E45AE418C8D9F100BDA5A4 /* InfoPlist.strings */; };
+		D8E45AEF18C8D9F100BDA5A4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8E45AE618C8D9F100BDA5A4 /* Images.xcassets */; };
+		D8E45AF018C8D9F100BDA5A4 /* JCCurrencyTextField-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D8E45AE718C8D9F100BDA5A4 /* JCCurrencyTextField-Info.plist */; };
+		D8E45AF118C8D9F100BDA5A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E45AE918C8D9F100BDA5A4 /* main.m */; };
+		D8E45AF218C8D9F100BDA5A4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E45AEB18C8D9F100BDA5A4 /* ViewController.m */; };
+		D8E45B0018C8DB8900BDA5A4 /* JCCurrencyTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E45AFF18C8DB8900BDA5A4 /* JCCurrencyTextField.m */; };
+		D8E45B0918C8E6C200BDA5A4 /* GUIDE.md in Resources */ = {isa = PBXBuildFile; fileRef = D8E45B0318C8E6C200BDA5A4 /* GUIDE.md */; };
+		D8E45B0A18C8E6C200BDA5A4 /* JCCurrencyUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E45B0618C8E6C200BDA5A4 /* JCCurrencyUtil.m */; };
+		D8E45B0B18C8E6C200BDA5A4 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = D8E45B0718C8E6C200BDA5A4 /* LICENSE */; };
+		D8E45B0C18C8E6C200BDA5A4 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D8E45B0818C8E6C200BDA5A4 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,17 +44,6 @@
 		D8E45AA418C8D96400BDA5A4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D8E45AA618C8D96400BDA5A4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		D8E45AA818C8D96400BDA5A4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		D8E45AAC18C8D96400BDA5A4 /* JCCurrencyTextField-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JCCurrencyTextField-Info.plist"; sourceTree = "<group>"; };
-		D8E45AAE18C8D96400BDA5A4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		D8E45AB018C8D96400BDA5A4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D8E45AB218C8D96400BDA5A4 /* JCCurrencyTextField-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JCCurrencyTextField-Prefix.pch"; sourceTree = "<group>"; };
-		D8E45AB318C8D96400BDA5A4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		D8E45AB418C8D96400BDA5A4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D8E45AB718C8D96400BDA5A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D8E45AB918C8D96400BDA5A4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D8E45ABA18C8D96400BDA5A4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		D8E45ABC18C8D96400BDA5A4 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		D8E45ABE18C8D96400BDA5A4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D8E45AC418C8D96400BDA5A4 /* JCCurrencyTextFieldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JCCurrencyTextFieldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8E45AC518C8D96400BDA5A4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		D8E45ACD18C8D96400BDA5A4 /* JCCurrencyTextFieldTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JCCurrencyTextFieldTests-Info.plist"; sourceTree = "<group>"; };
@@ -58,6 +52,23 @@
 		D8E45AD418C8D96400BDA5A4 /* GUIDE.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = GUIDE.md; sourceTree = "<group>"; };
 		D8E45AD518C8D96400BDA5A4 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		D8E45AD618C8D96400BDA5A4 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		D8E45AE018C8D9F100BDA5A4 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D8E45AE118C8D9F100BDA5A4 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D8E45AE318C8D9F100BDA5A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D8E45AE518C8D9F100BDA5A4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D8E45AE618C8D9F100BDA5A4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D8E45AE718C8D9F100BDA5A4 /* JCCurrencyTextField-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "JCCurrencyTextField-Info.plist"; sourceTree = "<group>"; };
+		D8E45AE818C8D9F100BDA5A4 /* JCCurrencyTextField-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JCCurrencyTextField-Prefix.pch"; sourceTree = "<group>"; };
+		D8E45AE918C8D9F100BDA5A4 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D8E45AEA18C8D9F100BDA5A4 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D8E45AEB18C8D9F100BDA5A4 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D8E45AFE18C8DB8900BDA5A4 /* JCCurrencyTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCCurrencyTextField.h; sourceTree = "<group>"; };
+		D8E45AFF18C8DB8900BDA5A4 /* JCCurrencyTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCCurrencyTextField.m; sourceTree = "<group>"; };
+		D8E45B0318C8E6C200BDA5A4 /* GUIDE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GUIDE.md; sourceTree = "<group>"; };
+		D8E45B0518C8E6C200BDA5A4 /* JCCurrencyUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCCurrencyUtil.h; sourceTree = "<group>"; };
+		D8E45B0618C8E6C200BDA5A4 /* JCCurrencyUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCCurrencyUtil.m; sourceTree = "<group>"; };
+		D8E45B0718C8E6C200BDA5A4 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = JCCurrencyUtil/LICENSE; sourceTree = SOURCE_ROOT; };
+		D8E45B0818C8E6C200BDA5A4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.md; path = JCCurrencyUtil/README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +98,8 @@
 		D8E45A9818C8D96400BDA5A4 = {
 			isa = PBXGroup;
 			children = (
-				D8E45AAA18C8D96400BDA5A4 /* JCCurrencyTextField */,
+				D8E45AFD18C8DB8900BDA5A4 /* JCCurrencyTextField */,
+				D8E45ADF18C8D9F100BDA5A4 /* Demo */,
 				D8E45ACB18C8D96400BDA5A4 /* JCCurrencyTextFieldTests */,
 				D8E45AD318C8D96400BDA5A4 /* Documentation */,
 				D8E45AA318C8D96400BDA5A4 /* Frameworks */,
@@ -113,32 +125,6 @@
 				D8E45AC518C8D96400BDA5A4 /* XCTest.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D8E45AAA18C8D96400BDA5A4 /* JCCurrencyTextField */ = {
-			isa = PBXGroup;
-			children = (
-				D8E45AB318C8D96400BDA5A4 /* AppDelegate.h */,
-				D8E45AB418C8D96400BDA5A4 /* AppDelegate.m */,
-				D8E45AB618C8D96400BDA5A4 /* Main.storyboard */,
-				D8E45AB918C8D96400BDA5A4 /* ViewController.h */,
-				D8E45ABA18C8D96400BDA5A4 /* ViewController.m */,
-				D8E45ABC18C8D96400BDA5A4 /* .gitignore */,
-				D8E45ABE18C8D96400BDA5A4 /* Images.xcassets */,
-				D8E45AAB18C8D96400BDA5A4 /* Supporting Files */,
-			);
-			path = JCCurrencyTextField;
-			sourceTree = "<group>";
-		};
-		D8E45AAB18C8D96400BDA5A4 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				D8E45AAC18C8D96400BDA5A4 /* JCCurrencyTextField-Info.plist */,
-				D8E45AAD18C8D96400BDA5A4 /* InfoPlist.strings */,
-				D8E45AB018C8D96400BDA5A4 /* main.m */,
-				D8E45AB218C8D96400BDA5A4 /* JCCurrencyTextField-Prefix.pch */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		D8E45ACB18C8D96400BDA5A4 /* JCCurrencyTextFieldTests */ = {
@@ -168,6 +154,95 @@
 			);
 			path = Documentation;
 			sourceTree = "<group>";
+		};
+		D8E45ADF18C8D9F100BDA5A4 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				D8E45AF318C8DA4100BDA5A4 /* Application Delegate */,
+				D8E45AF618C8DA7F00BDA5A4 /* View Controllers */,
+				D8E45AF418C8DA5C00BDA5A4 /* Resources */,
+				D8E45AF518C8DA6C00BDA5A4 /* Supporting Files */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		D8E45AF318C8DA4100BDA5A4 /* Application Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				D8E45AE018C8D9F100BDA5A4 /* AppDelegate.h */,
+				D8E45AE118C8D9F100BDA5A4 /* AppDelegate.m */,
+			);
+			name = "Application Delegate";
+			sourceTree = "<group>";
+		};
+		D8E45AF418C8DA5C00BDA5A4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D8E45AE218C8D9F100BDA5A4 /* Main.storyboard */,
+				D8E45AE618C8D9F100BDA5A4 /* Images.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		D8E45AF518C8DA6C00BDA5A4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D8E45AE418C8D9F100BDA5A4 /* InfoPlist.strings */,
+				D8E45AE718C8D9F100BDA5A4 /* JCCurrencyTextField-Info.plist */,
+				D8E45AE818C8D9F100BDA5A4 /* JCCurrencyTextField-Prefix.pch */,
+				D8E45AE918C8D9F100BDA5A4 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D8E45AF618C8DA7F00BDA5A4 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D8E45AEA18C8D9F100BDA5A4 /* ViewController.h */,
+				D8E45AEB18C8D9F100BDA5A4 /* ViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		D8E45AFD18C8DB8900BDA5A4 /* JCCurrencyTextField */ = {
+			isa = PBXGroup;
+			children = (
+				D8E45B0118C8E63900BDA5A4 /* Externals */,
+				D8E45AFE18C8DB8900BDA5A4 /* JCCurrencyTextField.h */,
+				D8E45AFF18C8DB8900BDA5A4 /* JCCurrencyTextField.m */,
+			);
+			path = JCCurrencyTextField;
+			sourceTree = "<group>";
+		};
+		D8E45B0118C8E63900BDA5A4 /* Externals */ = {
+			isa = PBXGroup;
+			children = (
+				D8E45B0418C8E6C200BDA5A4 /* JCCurrencyUtil */,
+			);
+			name = Externals;
+			sourceTree = "<group>";
+		};
+		D8E45B0218C8E6C200BDA5A4 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				D8E45B0718C8E6C200BDA5A4 /* LICENSE */,
+				D8E45B0818C8E6C200BDA5A4 /* README.md */,
+				D8E45B0318C8E6C200BDA5A4 /* GUIDE.md */,
+			);
+			name = Documentation;
+			path = JCCurrencyUtil/Documentation;
+			sourceTree = SOURCE_ROOT;
+		};
+		D8E45B0418C8E6C200BDA5A4 /* JCCurrencyUtil */ = {
+			isa = PBXGroup;
+			children = (
+				D8E45B0218C8E6C200BDA5A4 /* Documentation */,
+				D8E45B0518C8E6C200BDA5A4 /* JCCurrencyUtil.h */,
+				D8E45B0618C8E6C200BDA5A4 /* JCCurrencyUtil.m */,
+			);
+			name = JCCurrencyUtil;
+			path = JCCurrencyUtil/JCCurrencyUtil;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -245,10 +320,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8E45AAF18C8D96400BDA5A4 /* InfoPlist.strings in Resources */,
-				D8E45ABF18C8D96400BDA5A4 /* Images.xcassets in Resources */,
-				D8E45ABD18C8D96400BDA5A4 /* .gitignore in Resources */,
-				D8E45AB818C8D96400BDA5A4 /* Main.storyboard in Resources */,
+				D8E45B0B18C8E6C200BDA5A4 /* LICENSE in Resources */,
+				D8E45AEF18C8D9F100BDA5A4 /* Images.xcassets in Resources */,
+				D8E45AED18C8D9F100BDA5A4 /* Main.storyboard in Resources */,
+				D8E45B0C18C8E6C200BDA5A4 /* README.md in Resources */,
+				D8E45B0918C8E6C200BDA5A4 /* GUIDE.md in Resources */,
+				D8E45AF018C8D9F100BDA5A4 /* JCCurrencyTextField-Info.plist in Resources */,
+				D8E45AEE18C8D9F100BDA5A4 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,9 +345,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8E45ABB18C8D96400BDA5A4 /* ViewController.m in Sources */,
-				D8E45AB518C8D96400BDA5A4 /* AppDelegate.m in Sources */,
-				D8E45AB118C8D96400BDA5A4 /* main.m in Sources */,
+				D8E45AF218C8D9F100BDA5A4 /* ViewController.m in Sources */,
+				D8E45B0018C8DB8900BDA5A4 /* JCCurrencyTextField.m in Sources */,
+				D8E45AF118C8D9F100BDA5A4 /* main.m in Sources */,
+				D8E45AEC18C8D9F100BDA5A4 /* AppDelegate.m in Sources */,
+				D8E45B0A18C8E6C200BDA5A4 /* JCCurrencyUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,26 +372,26 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D8E45AAD18C8D96400BDA5A4 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D8E45AAE18C8D96400BDA5A4 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		D8E45AB618C8D96400BDA5A4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D8E45AB718C8D96400BDA5A4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D8E45ACE18C8D96400BDA5A4 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				D8E45ACF18C8D96400BDA5A4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D8E45AE218C8D9F100BDA5A4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8E45AE318C8D9F100BDA5A4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D8E45AE418C8D9F100BDA5A4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8E45AE518C8D9F100BDA5A4 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -397,8 +477,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "JCCurrencyTextField/JCCurrencyTextField-Prefix.pch";
-				INFOPLIST_FILE = "JCCurrencyTextField/JCCurrencyTextField-Info.plist";
+				GCC_PREFIX_HEADER = "Demo/JCCurrencyTextField-Prefix.pch";
+				INFOPLIST_FILE = "Demo/JCCurrencyTextField-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -410,8 +490,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "JCCurrencyTextField/JCCurrencyTextField-Prefix.pch";
-				INFOPLIST_FILE = "JCCurrencyTextField/JCCurrencyTextField-Info.plist";
+				GCC_PREFIX_HEADER = "Demo/JCCurrencyTextField-Prefix.pch";
+				INFOPLIST_FILE = "Demo/JCCurrencyTextField-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
