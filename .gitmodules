@@ -1,0 +1,3 @@
+[submodule "Externals/JCCurrencyUtil"]
+	path = Externals/JCCurrencyUtil
+	url = git@github.com:iJoeCollins/JCCurrencyUtil.git
