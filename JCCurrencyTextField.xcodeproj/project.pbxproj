@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D897CA9E18C9280200C8425A /* JCCurrencyUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = D897CA9D18C9280200C8425A /* JCCurrencyUtil.m */; };
 		D8E45AA518C8D96400BDA5A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E45AA418C8D96400BDA5A4 /* Foundation.framework */; };
 		D8E45AA718C8D96400BDA5A4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E45AA618C8D96400BDA5A4 /* CoreGraphics.framework */; };
 		D8E45AA918C8D96400BDA5A4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E45AA818C8D96400BDA5A4 /* UIKit.framework */; };
@@ -23,10 +24,6 @@
 		D8E45AF118C8D9F100BDA5A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E45AE918C8D9F100BDA5A4 /* main.m */; };
 		D8E45AF218C8D9F100BDA5A4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E45AEB18C8D9F100BDA5A4 /* ViewController.m */; };
 		D8E45B0018C8DB8900BDA5A4 /* JCCurrencyTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E45AFF18C8DB8900BDA5A4 /* JCCurrencyTextField.m */; };
-		D8E45B0918C8E6C200BDA5A4 /* GUIDE.md in Resources */ = {isa = PBXBuildFile; fileRef = D8E45B0318C8E6C200BDA5A4 /* GUIDE.md */; };
-		D8E45B0A18C8E6C200BDA5A4 /* JCCurrencyUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E45B0618C8E6C200BDA5A4 /* JCCurrencyUtil.m */; };
-		D8E45B0B18C8E6C200BDA5A4 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = D8E45B0718C8E6C200BDA5A4 /* LICENSE */; };
-		D8E45B0C18C8E6C200BDA5A4 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D8E45B0818C8E6C200BDA5A4 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D897CA9C18C9280200C8425A /* JCCurrencyUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCCurrencyUtil.h; sourceTree = "<group>"; };
+		D897CA9D18C9280200C8425A /* JCCurrencyUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCCurrencyUtil.m; sourceTree = "<group>"; };
 		D8E45AA118C8D96400BDA5A4 /* JCCurrencyTextField.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JCCurrencyTextField.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8E45AA418C8D96400BDA5A4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D8E45AA618C8D96400BDA5A4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -64,11 +63,6 @@
 		D8E45AEB18C8D9F100BDA5A4 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D8E45AFE18C8DB8900BDA5A4 /* JCCurrencyTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCCurrencyTextField.h; sourceTree = "<group>"; };
 		D8E45AFF18C8DB8900BDA5A4 /* JCCurrencyTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCCurrencyTextField.m; sourceTree = "<group>"; };
-		D8E45B0318C8E6C200BDA5A4 /* GUIDE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GUIDE.md; sourceTree = "<group>"; };
-		D8E45B0518C8E6C200BDA5A4 /* JCCurrencyUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCCurrencyUtil.h; sourceTree = "<group>"; };
-		D8E45B0618C8E6C200BDA5A4 /* JCCurrencyUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCCurrencyUtil.m; sourceTree = "<group>"; };
-		D8E45B0718C8E6C200BDA5A4 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = JCCurrencyUtil/LICENSE; sourceTree = SOURCE_ROOT; };
-		D8E45B0818C8E6C200BDA5A4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.md; path = JCCurrencyUtil/README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +89,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D897CA9B18C9280200C8425A /* JCCurrencyUtil */ = {
+			isa = PBXGroup;
+			children = (
+				D897CA9C18C9280200C8425A /* JCCurrencyUtil.h */,
+				D897CA9D18C9280200C8425A /* JCCurrencyUtil.m */,
+			);
+			name = JCCurrencyUtil;
+			path = Externals/JCCurrencyUtil/JCCurrencyUtil;
+			sourceTree = SOURCE_ROOT;
+		};
 		D8E45A9818C8D96400BDA5A4 = {
 			isa = PBXGroup;
 			children = (
@@ -217,32 +221,10 @@
 		D8E45B0118C8E63900BDA5A4 /* Externals */ = {
 			isa = PBXGroup;
 			children = (
-				D8E45B0418C8E6C200BDA5A4 /* JCCurrencyUtil */,
+				D897CA9B18C9280200C8425A /* JCCurrencyUtil */,
 			);
 			name = Externals;
 			sourceTree = "<group>";
-		};
-		D8E45B0218C8E6C200BDA5A4 /* Documentation */ = {
-			isa = PBXGroup;
-			children = (
-				D8E45B0718C8E6C200BDA5A4 /* LICENSE */,
-				D8E45B0818C8E6C200BDA5A4 /* README.md */,
-				D8E45B0318C8E6C200BDA5A4 /* GUIDE.md */,
-			);
-			name = Documentation;
-			path = JCCurrencyUtil/Documentation;
-			sourceTree = SOURCE_ROOT;
-		};
-		D8E45B0418C8E6C200BDA5A4 /* JCCurrencyUtil */ = {
-			isa = PBXGroup;
-			children = (
-				D8E45B0218C8E6C200BDA5A4 /* Documentation */,
-				D8E45B0518C8E6C200BDA5A4 /* JCCurrencyUtil.h */,
-				D8E45B0618C8E6C200BDA5A4 /* JCCurrencyUtil.m */,
-			);
-			name = JCCurrencyUtil;
-			path = JCCurrencyUtil/JCCurrencyUtil;
-			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -320,11 +302,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8E45B0B18C8E6C200BDA5A4 /* LICENSE in Resources */,
 				D8E45AEF18C8D9F100BDA5A4 /* Images.xcassets in Resources */,
 				D8E45AED18C8D9F100BDA5A4 /* Main.storyboard in Resources */,
-				D8E45B0C18C8E6C200BDA5A4 /* README.md in Resources */,
-				D8E45B0918C8E6C200BDA5A4 /* GUIDE.md in Resources */,
 				D8E45AF018C8D9F100BDA5A4 /* JCCurrencyTextField-Info.plist in Resources */,
 				D8E45AEE18C8D9F100BDA5A4 /* InfoPlist.strings in Resources */,
 			);
@@ -349,7 +328,7 @@
 				D8E45B0018C8DB8900BDA5A4 /* JCCurrencyTextField.m in Sources */,
 				D8E45AF118C8D9F100BDA5A4 /* main.m in Sources */,
 				D8E45AEC18C8D9F100BDA5A4 /* AppDelegate.m in Sources */,
-				D8E45B0A18C8E6C200BDA5A4 /* JCCurrencyUtil.m in Sources */,
+				D897CA9E18C9280200C8425A /* JCCurrencyUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
