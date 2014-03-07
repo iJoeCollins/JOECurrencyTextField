@@ -5,6 +5,12 @@ This is a subclass of UITextField that specifically deals with the entry and for
 
 ## Usage
 
+Open your terminal and run:
+
+> ```git clone --recursive git@github.com:iJoeCollins/JCCurrencyTextField.git```
+
+This will clone the repo as well as its dependencies under [Externals/](Externals)
+
 Setup and configuration guide can be found [here](/Documentation/GUIDE.md).
 
 
