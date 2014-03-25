@@ -9,6 +9,8 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet JCCurrencyTextField *textField;
+@property (weak, nonatomic) IBOutlet JCCurrencyTextField *textField2;
 
 @end
 
@@ -18,6 +20,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    self.textField.usesArbitraryFractionDigits = YES;
 }
 
 - (void)didReceiveMemoryWarning

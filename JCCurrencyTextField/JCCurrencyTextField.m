@@ -48,9 +48,12 @@
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
-        _utility = [JCCurrencyUtil new];
-        [_utility registerTextField:self];
-        _scale = _utility.formatter.minimumFractionDigits;
+        _formatter = [[NSNumberFormatter alloc] init];
+        [_formatter setNumberStyle:NSNumberFormatterCurrencyStyle];
+        [_formatter setLocale:[NSLocale currentLocale]];
+//        _active = YES;
+        _scale = _formatter.minimumFractionDigits;
+//        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textFieldTextDidChange:) name:UITextFieldTextDidChangeNotification object:self];
         
         self.delegate = self;
     }
@@ -67,41 +70,138 @@
     self = [super initWithCoder:aDecoder];
     if (self) {
         // Initialization code
-        _utility = [JCCurrencyUtil new];
-        [_utility registerTextField:self];
-        _scale = _utility.formatter.minimumFractionDigits;
+        _formatter = [[NSNumberFormatter alloc] init];
+        [_formatter setNumberStyle:NSNumberFormatterCurrencyStyle];
+        [_formatter setLocale:[NSLocale currentLocale]];
+//        _active = YES;
+        [_formatter setMaximumIntegerDigits:17];
+        _scale = _formatter.minimumFractionDigits;
+//        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textFieldTextDidChange:) name:UITextFieldTextDidChangeNotification object:self];
         
         self.delegate = self;
     }
     return self;
 }
 
+//- (void)dealloc
+//{
+//    [[NSNotificationCenter defaultCenter] removeObserver:self];
+//}
+
 #pragma mark - UITextField Delegate Methods
 
-- (void)textFieldDidBeginEditing:(UITextField *)textField
-{
-    [[NSNotificationCenter defaultCenter] postNotificationName:UITextFieldTextDidChangeNotification object:self userInfo:nil];
-}
+//- (void)textFieldDidBeginEditing:(UITextField *)textField
+//{
+//    [[NSNotificationCenter defaultCenter] postNotificationName:UITextFieldTextDidChangeNotification object:self userInfo:nil];
+//}
+
 
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
 {
-    if (![string length]) {
-        return YES;
-    }
+//    if (![string length]) {
+//        return YES;
+//    }
     
     if ([string isEqualToString:@"."] && self.usesArbitraryFractionDigits) {
-        [self.utility toggleFractionDigits:textField];
-        self.scale = self.utility.formatter.minimumFractionDigits;
+        [self toggleFractionDigits:textField];
+        self.scale = self.formatter.minimumFractionDigits;
         
         return NO;
     }
     
-    return [self.utility isActive];
+    NSString *resultString = [textField.text stringByReplacingCharactersInRange:range withString:string];
+    
+    NSString *cleanString = [JCCurrencyUtil cleanCurrencyString:resultString];
+    
+    unsigned long long mantissa = strtoull([cleanString UTF8String], NULL, 10);
+    
+    NSUInteger length = mantissa != 0 ? (floor(log10(llabs(mantissa))) + 1) : 0;
+    NSUInteger bufferLength = (self.formatter.minimumFractionDigits + self.formatter.maximumIntegerDigits);
+    if (length < bufferLength) {
+        // Create an NSDecimalNumber from the textfields text so we can format it
+        NSDecimalNumber *decimalNumber = [NSDecimalNumber decimalNumberWithMantissa:mantissa exponent:(-1 * self.scale) isNegative:NO];
+        
+        // Format the decimal number given as currency
+        self.text = [self.formatter stringFromNumber:decimalNumber];
+    }
+    
+    return NO;
 }
+
+#warning this is an incomplete but working solution, still needs to work out arbitrary number of decimal places
+//- (void)textFieldTextDidChange:(NSNotification *)notification
+//{
+//    // Format the changed text
+//    [self formatChangedText];
+//    
+//    // Limit the number of digits that can be entered by the user (based on buffer limit of unsigned long long)
+//    [self switchActiveWithLength:[self lengthOfCurrencyValue]];
+//}
 
 - (IBAction)dismissKeyboard:(id)sender {
     [self resignFirstResponder];
 }
 
+
+#pragma mark - Private Methods
+
+//- (void)formatChangedText
+//{
+//    // Create an NSDecimalNumber from the textfields text so we can format it
+//    NSDecimalNumber *decimalNumber = [JCCurrencyUtil decimalNumberFromCurrencyString:self.text scale:self.formatter.minimumFractionDigits];
+//    
+//    // Format the decimal number given as currency
+//    self.text = [self.formatter stringFromNumber:decimalNumber];
+//}
+
+//- (NSUInteger)lengthOfCurrencyValue
+//{
+//    // Clean the string of any non decimal characters and convert it to a possibly very large integer
+//    NSString *cleanString = [JCCurrencyUtil cleanCurrencyString:self.text];
+//    unsigned long long mantissa = strtoull([cleanString UTF8String], NULL, 10);
+//    NSUInteger length = (floor(log10(llabs(mantissa))) + 1);
+//    
+//    return length;
+//}
+//
+//
+//- (void)switchActiveWithLength:(NSUInteger)length
+//{
+//    // This switches active based on the limit of decimal characters an unsigned long long can hold at 2 and 4 decimal places
+//    if (self.formatter.minimumFractionDigits == 2) {
+//        switch (length) {
+//            case 19:
+//                self.active = NO;
+//                break;
+//            case 18:
+//                self.active = YES;
+//            default:
+//                break;
+//        }
+//    } else {
+//        switch (length) {
+//            case 4:
+//                self.active = NO;
+//                break;
+//            case 3:
+//                self.active = YES;
+//            default:
+//                break;
+//        }
+//    }
+//}
+
+#warning this is an incomplete but working solution to controlling decimal places
+- (void)toggleFractionDigits:(UITextField *)textField
+{
+    BOOL twoMinimumFractionDigits = (self.formatter.minimumFractionDigits == 2);
+    self.formatter.minimumFractionDigits = twoMinimumFractionDigits ? 4 : 2;
+    self.formatter.maximumIntegerDigits = twoMinimumFractionDigits ? 1 : 17;
+    
+    textField.text = nil;
+//    self.active = YES;
+    
+//    [[NSNotificationCenter defaultCenter] postNotificationName:UITextFieldTextDidChangeNotification object:textField userInfo:nil];
+}
 
 @end

@@ -38,6 +38,8 @@
 @interface JCCurrencyTextField : UITextField <UITextFieldDelegate>
 
 @property (strong, nonatomic) JCCurrencyUtil *utility;
+@property (strong, nonatomic) NSNumberFormatter *formatter;
+@property (assign, getter = isActive, nonatomic) BOOL active;
 @property (assign, nonatomic) BOOL usesArbitraryFractionDigits;
 @property (assign, nonatomic) short scale;
 
