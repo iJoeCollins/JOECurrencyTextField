@@ -123,7 +123,6 @@
 				D8E45AD118C8D96400BDA5A4 /* JOECurrencyTextFieldTests.m */,
 				D8E45ACC18C8D96400BDA5A4 /* Supporting Files */,
 			);
-			name = JOECurrencyTextFieldTests;
 			path = JOECurrencyTextFieldTests;
 			sourceTree = "<group>";
 		};
@@ -201,7 +200,6 @@
 				D8E45AFE18C8DB8900BDA5A4 /* JOECurrencyTextField.h */,
 				D8E45AFF18C8DB8900BDA5A4 /* JOECurrencyTextField.m */,
 			);
-			name = JOECurrencyTextField;
 			path = JOECurrencyTextField;
 			sourceTree = "<group>";
 		};
