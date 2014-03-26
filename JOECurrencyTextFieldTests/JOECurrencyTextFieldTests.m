@@ -1,6 +1,6 @@
 //
-//  JCCurrencyTextFieldTests.m
-//  JCCurrencyTextFieldTests
+//  JOECurrencyTextFieldTests.m
+//  JOECurrencyTextFieldTests
 //
 //  Created by Joseph Collins on 3/6/14.
 //  Copyright (c) 2014 Joseph Collins. All rights reserved.
@@ -8,11 +8,11 @@
 
 #import <XCTest/XCTest.h>
 
-@interface JCCurrencyTextFieldTests : XCTestCase
+@interface JOECurrencyTextFieldTests : XCTestCase
 
 @end
 
-@implementation JCCurrencyTextFieldTests
+@implementation JOECurrencyTextFieldTests
 
 - (void)setUp
 {

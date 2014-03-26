@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "JCCurrencyTextField.h"
+#import "JOECurrencyTextField.h"
 
 @interface ViewController : UIViewController
 

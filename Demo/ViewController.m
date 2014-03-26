@@ -9,8 +9,8 @@
 #import "ViewController.h"
 
 @interface ViewController ()
-@property (weak, nonatomic) IBOutlet JCCurrencyTextField *textField;
-@property (weak, nonatomic) IBOutlet JCCurrencyTextField *textField2;
+@property (weak, nonatomic) IBOutlet JOECurrencyTextField *textField;
+@property (weak, nonatomic) IBOutlet JOECurrencyTextField *textField2;
 
 @end
 

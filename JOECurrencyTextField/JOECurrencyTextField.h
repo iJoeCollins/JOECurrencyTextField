@@ -1,14 +1,14 @@
 //
-//  JCCurrencyTextField.h
+//  JOECurrencyTextField.h
 //
-//  Version 1.0
+//  Version 0.1.0
 //
 //  Created by Joseph Collins on 03/06/14.
 //
 //  Distributed under The MIT License (MIT)
 //  Get the latest version here:
 //
-//  http://www.github.com/ijoecollins/JCCurrencyTextField
+//  http://www.github.com/ijoecollins/JOECurrencyTextField
 //
 //  Copyright (c) 2014 Joseph Collins.
 //
@@ -33,16 +33,12 @@
 
 #import <UIKit/UIKit.h>
 
-@class JCCurrencyUtil;
+@interface JOECurrencyTextField : UITextField <UITextFieldDelegate>
 
-@interface JCCurrencyTextField : UITextField <UITextFieldDelegate>
-
-@property (strong, nonatomic) JCCurrencyUtil *utility;
 @property (strong, nonatomic) NSNumberFormatter *formatter;
-@property (assign, getter = isActive, nonatomic) BOOL active;
+@property (strong, nonatomic) NSDecimalNumber *decimalValue;
+@property (nonatomic, assign) NSUInteger activeOffset;
 @property (assign, nonatomic) BOOL usesArbitraryFractionDigits;
-@property (assign, nonatomic) short scale;
-
 
 // Designated initializer when using code
 - (instancetype)initWithFrame:(CGRect)frame;
