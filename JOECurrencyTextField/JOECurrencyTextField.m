@@ -52,7 +52,7 @@
         // Initialization code
         _formatter = [[NSNumberFormatter alloc] init];
         [_formatter setNumberStyle:NSNumberFormatterCurrencyStyle];
-        [_formatter setLocale:[NSLocale autoupdatingCurrentLocale]];
+        [_formatter setLocale:[NSLocale currentLocale]];
         [_formatter setMaximumIntegerDigits:17];
         _activeOffset = 0;
 
@@ -69,7 +69,7 @@
         // Initialization code
         _formatter = [[NSNumberFormatter alloc] init];
         [_formatter setNumberStyle:NSNumberFormatterCurrencyStyle];
-        [_formatter setLocale:[NSLocale autoupdatingCurrentLocale]];
+        [_formatter setLocale:[NSLocale currentLocale]];
         [_formatter setMaximumIntegerDigits:17];
         _activeOffset = 0;
         
