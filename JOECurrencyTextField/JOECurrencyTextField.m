@@ -33,15 +33,18 @@
 
 #import "JOECurrencyTextField.h"
 
+@interface JOECurrencyTextField ()
+
+@property (nonatomic, strong, readwrite) NSDecimalNumber *decimalValue;
+
+@end
+
+#pragma mark - JOECurrencyTextField
+
 @implementation JOECurrencyTextField
 
-#pragma mark - Initialization
+#pragma mark - Creating JOECurrencyTextField
 
-/*! The designated initializer when using code.
- 
- @param frame Used to size and position the control.
- @return Returns a JCCurrencyTextField object.
- */
 - (instancetype)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
@@ -58,11 +61,7 @@
     return self;
 }
 
-/*! The designated initializer when loading from a nib or storyboard.
- 
- @param aDecoder An NSCoder object.
- @return Returns a JCCurrencyTextField object.
- */
+
 - (instancetype)initWithCoder:(NSCoder *)aDecoder
 {
     self = [super initWithCoder:aDecoder];
@@ -79,11 +78,13 @@
     return self;
 }
 
+
 #pragma mark - UITextField Delegate Methods
 
 - (void)textFieldDidBeginEditing:(UITextField *)textField
 {
     // Make sure the text field isn't empty and is formatted correctly.
+    
     // Create an NSDecimalNumber from the textfields text so we can format it
     self.decimalValue = [self decimalNumberFromCurrencyString:self.text scale:self.formatter.minimumFractionDigits];
     
@@ -94,15 +95,39 @@
 
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
 {
-    // Toggle the number of fractional digits from 2 to four
-    if ([string isEqualToString:@"."] && self.usesArbitraryFractionDigits) {
+    // Toggle the number of fractional digits from 2 to four if the decimal character is hit.
+    if ([string isEqualToString:self.formatter.decimalSeparator] && self.usesArbitraryFractionDigits) {
         [self toggleFractionDigits:textField];
         
         return NO;
     }
     
+    // Reset everything if pasting in a value.
+    if ([string length] > 1) {
+        self.text = nil;
+        range = NSMakeRange(0, 0);
+    }
+    
+    // Change the fields text based on the users entry
+    [self changeCharactersInRange:range withString:(NSString *)string];
+    
+    return NO;
+}
+
+
+#pragma mark - Dismissing the keyboard
+
+- (IBAction)dismissKeyboard:(id)sender {
+    [self resignFirstResponder];
+}
+
+
+#pragma mark - Private Methods
+
+- (void)changeCharactersInRange:(NSRange)range withString:(NSString *)string
+{
     // Get the string resulting from the change
-    NSString *resultString = [textField.text stringByReplacingCharactersInRange:range withString:string];
+    NSString *resultString = [self.text stringByReplacingCharactersInRange:range withString:string];
     
     // Clean the string of all non decimal characters
     NSString *cleanString = [self cleanCurrencyString:resultString];
@@ -128,20 +153,11 @@
             // Format the decimal number given as currency
             self.text = [self.formatter stringFromNumber:self.decimalValue];
         }
-
+        
     }
-    
-    return NO;
-}
-
-- (IBAction)dismissKeyboard:(id)sender {
-    [self resignFirstResponder];
 }
 
 
-#pragma mark - Private Methods
-
-#warning this is an incomplete but working solution to controlling decimal places. It should probably be left to the user of the class to decide how to setup the formatting of fraction and integer digit limits
 - (void)toggleFractionDigits:(UITextField *)textField
 {
     BOOL twoMinimumFractionDigits = (self.formatter.minimumFractionDigits == 2);
@@ -154,12 +170,13 @@
 
 /*! Method converts a string formatted as currency to a decimal number object with a given scale argument.
  
- @b Example: Given scale:4, @"$0.0045" -> 0.0045
+    @b Example: Given scale:4, @"$0.0045" -> 0.0045
  
- @param string NSString argument to be converted to a decimal number
- @param scale The number of digits a rounded value should have after its decimal point.
- @return The resulting NSDecimalNumber object.
- */
+    @param string NSString argument to be converted to a decimal number
+    @param scale The number of digits a rounded value should have after its decimal point.
+    @return The resulting NSDecimalNumber object.
+*/
+
 - (NSDecimalNumber *)decimalNumberFromCurrencyString:(NSString *)string scale:(short)scale
 {
     NSString *cleanString = [self cleanCurrencyString:string];
@@ -171,9 +188,10 @@
 
 /*! This method cleans a NSString representing currency.  It takes an inverted decimalDigitCharacterSet to remove currency symbols, commas, and decimals.
  
- @param string The string to be cleaned.
- @return The resulting digit only string.
- */
+    @param string The string to be cleaned.
+    @return The resulting digit only string.
+*/
+
 - (NSString *)cleanCurrencyString:(NSString *)string
 {
     NSCharacterSet *invertedDecimalSet = [[NSCharacterSet decimalDigitCharacterSet] invertedSet];

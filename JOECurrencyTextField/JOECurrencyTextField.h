@@ -33,14 +33,57 @@
 
 #import <UIKit/UIKit.h>
 
+#pragma mark - JOECurrencyTextField Interface
+
+/*!  JOECurrencyTextField is a subclass of UITextField that specifically deals with the entry and formatting of currency.
+*/
+
 @interface JOECurrencyTextField : UITextField <UITextFieldDelegate>
 
-@property (strong, nonatomic) NSNumberFormatter *formatter;
-@property (strong, nonatomic) NSDecimalNumber *decimalValue;
-@property (nonatomic, assign) NSUInteger activeOffset;
-@property (assign, nonatomic) BOOL usesArbitraryFractionDigits;
 
-// Designated initializer when using code
+///-------------------------------
+/// @name Properties
+///-------------------------------
+
+/*! The formatter converts NSNumbers into autoupdating localized currency related strings.
+*/
+@property (nonatomic, strong) NSNumberFormatter *formatter;
+
+/*! The number value of the currency string.
+*/
+@property (nonatomic, strong, readonly) NSDecimalNumber *decimalValue;
+
+/*! The number of active significant digits allowed to change in every call of the text fields delegate methods.
+ 
+    Example: $0.4523 : the activeOffset is equal to 1. If equal to 2, $0.0452.
+*/
+@property (nonatomic, assign) NSUInteger activeOffset;
+
+/*! Allows the user to set an arbitrary number of digits after the decimal seperator by pressing the seperator on the keypad.
+*/
+@property (nonatomic, assign) BOOL usesArbitraryFractionDigits;
+
+
+///------------------------------------
+/// @name Creating JOECurrencyTextField
+///------------------------------------
+
+/*! The designated initializer when using code.
+ 
+    @param frame Used to size and position the control.
+    @return Returns a JCCurrencyTextField object.
+*/
 - (instancetype)initWithFrame:(CGRect)frame;
+
+
+///-------------------------------
+/// @name Dismissing the keyboard
+///-------------------------------
+
+/*! This method resigns the first responder, dismissing the keyboard.
+
+    @param sender The object that is sending the action message.
+*/
+- (IBAction)dismissKeyboard:(id)sender;
 
 @end

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>--project-name</key>
+	<string>JOECurrencyTextField</string>
+	<key>--project-company</key>
+	<string>Joseph Collins</string>
+	<key>--project-version</key>
+	<string>0.1.0</string>
+	<key>--company-id</key>
+	<string>co.ijoe</string>
+	<key>--docset-feed-formats</key>
+	<string>atom,xml</string>
+	<key>--docset-atom-filename</key>
+	<string>%PROJECTID.atom</string>
+	<key>--docset-xml-filename</key>
+	<string>%PROJECTID.xml</string>
+	<key>--docset-feed-url</key>
+	<string>http://developer.ijoe.co/library/%PROJECTID/%DOCSETATOMFILENAME</string>
+	<key>--docset-package-url</key>
+	<string>http://developer.ijoe.co/library/%PROJECTID/%DOCSETPACKAGEFILENAME</string>
+	<key>--docset-fallback-url</key>
+	<string>http://developer.ijoe.co/library/%PROJECTID/</string>
+	<key>--create-docset</key>
+	<true/>
+	<key>--publish-docset</key>
+	<true/>
+	<key>--install-docset</key>
+	<false/>
+	<key>--logformat</key>
+	<string>xcode</string>
+	<key>--print-settings</key>
+	<true/>
+	<key>--keep-intermediate-files</key>
+	<false/>
+	<key>--no-repeat-first-par</key>
+	<true/>
+	<key>--ignore</key>
+	<array>
+		<string>*.m</string>
+		<string>Externals</string>
+		<string>Demo</string>
+	</array>
+	<key>--index-desc</key>
+	<string>Readme.markdown</string>
+	<key>--include</key>
+	<array>
+		<string>./Documentation/Programming Guide-template.markdown</string>
+		<string>./Documentation/Setup Guide-template.markdown</string>
+	</array>
+	<key>--warn-invalid-crossref</key>
+	<false/>
+</dict>
+</plist>

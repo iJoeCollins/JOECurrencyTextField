@@ -6,6 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		D89737F018E3429B00F76C58 /* Documentation */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D89737F818E3429B00F76C58 /* Build configuration list for PBXAggregateTarget "Documentation" */;
+			buildPhases = (
+				D89737EF18E3429B00F76C58 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Documentation;
+			productName = Documentation;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		D8E45AA518C8D96400BDA5A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E45AA418C8D96400BDA5A4 /* Foundation.framework */; };
 		D8E45AA718C8D96400BDA5A4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E45AA618C8D96400BDA5A4 /* CoreGraphics.framework */; };
@@ -35,6 +49,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D89737F218E3429B00F76C58 /* AppledocSettings.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = AppledocSettings.plist; sourceTree = "<group>"; };
+		D89737F418E3429B00F76C58 /* Programming Guide-template.markdown */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Programming Guide-template.markdown"; path = "Documentation/Programming Guide-template.markdown"; sourceTree = "<group>"; };
+		D89737F518E3429B00F76C58 /* Setup Guide-template.markdown */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Setup Guide-template.markdown"; path = "Documentation/Setup Guide-template.markdown"; sourceTree = "<group>"; };
+		D89737F618E3429B00F76C58 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		D89737F718E3429B00F76C58 /* Readme.markdown */ = {isa = PBXFileReference; lastKnownFileType = text; path = Readme.markdown; sourceTree = "<group>"; };
 		D8E45AA118C8D96400BDA5A4 /* JOECurrencyTextField.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JOECurrencyTextField.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8E45AA418C8D96400BDA5A4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D8E45AA618C8D96400BDA5A4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -44,9 +63,6 @@
 		D8E45ACD18C8D96400BDA5A4 /* JOECurrencyTextFieldTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JOECurrencyTextFieldTests-Info.plist"; sourceTree = "<group>"; };
 		D8E45ACF18C8D96400BDA5A4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D8E45AD118C8D96400BDA5A4 /* JOECurrencyTextFieldTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JOECurrencyTextFieldTests.m; sourceTree = "<group>"; };
-		D8E45AD418C8D96400BDA5A4 /* GUIDE.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = GUIDE.md; sourceTree = "<group>"; };
-		D8E45AD518C8D96400BDA5A4 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE; path = /Users/Joe/Work/iJoe.Co/Development/Classes/JOECurrencyTextField/LICENSE; sourceTree = "<absolute>"; };
-		D8E45AD618C8D96400BDA5A4 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; name = README.md; path = /Users/Joe/Work/iJoe.Co/Development/Classes/JOECurrencyTextField/README.md; sourceTree = "<absolute>"; };
 		D8E45AE018C8D9F100BDA5A4 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D8E45AE118C8D9F100BDA5A4 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D8E45AE318C8D9F100BDA5A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -85,13 +101,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D89737F118E3429B00F76C58 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				D89737F218E3429B00F76C58 /* AppledocSettings.plist */,
+				D89737F618E3429B00F76C58 /* LICENSE */,
+				D89737F718E3429B00F76C58 /* Readme.markdown */,
+				D89737F318E3429B00F76C58 /* Programming Guides */,
+			);
+			name = Documentation;
+			sourceTree = "<group>";
+		};
+		D89737F318E3429B00F76C58 /* Programming Guides */ = {
+			isa = PBXGroup;
+			children = (
+				D89737F418E3429B00F76C58 /* Programming Guide-template.markdown */,
+				D89737F518E3429B00F76C58 /* Setup Guide-template.markdown */,
+			);
+			name = "Programming Guides";
+			sourceTree = "<group>";
+		};
 		D8E45A9818C8D96400BDA5A4 = {
 			isa = PBXGroup;
 			children = (
 				D8E45AFD18C8DB8900BDA5A4 /* JOECurrencyTextField */,
 				D8E45ADF18C8D9F100BDA5A4 /* Demo */,
 				D8E45ACB18C8D96400BDA5A4 /* JOECurrencyTextFieldTests */,
-				D8E45AD318C8D96400BDA5A4 /* Documentation */,
+				D89737F118E3429B00F76C58 /* Documentation */,
 				D8E45AA318C8D96400BDA5A4 /* Frameworks */,
 				D8E45AA218C8D96400BDA5A4 /* Products */,
 			);
@@ -133,16 +169,6 @@
 				D8E45ACE18C8D96400BDA5A4 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		D8E45AD318C8D96400BDA5A4 /* Documentation */ = {
-			isa = PBXGroup;
-			children = (
-				D8E45AD418C8D96400BDA5A4 /* GUIDE.md */,
-				D8E45AD518C8D96400BDA5A4 /* LICENSE */,
-				D8E45AD618C8D96400BDA5A4 /* README.md */,
-			);
-			path = Documentation;
 			sourceTree = "<group>";
 		};
 		D8E45ADF18C8D9F100BDA5A4 /* Demo */ = {
@@ -270,6 +296,7 @@
 			targets = (
 				D8E45AA018C8D96400BDA5A4 /* JOECurrencyTextField */,
 				D8E45AC318C8D96400BDA5A4 /* JOECurrencyTextFieldTests */,
+				D89737F018E3429B00F76C58 /* Documentation */,
 			);
 		};
 /* End PBXProject section */
@@ -294,6 +321,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D89737EF18E3429B00F76C58 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/appledoc \\\n--output \"${BUILD_DIR}/Documentation/\" \\\n\"${PROJECT_DIR}/Documentation\" \\\n\"${PROJECT_DIR}\"\necho \"Documentation Output directory: ${BUILD_DIR}/Documentation/\"\n// USER CONFIG\nSOURCE_DIR=\"co.ijoe.${PROJECT_NAME}.docset/Contents/Resources/\"\nDESTINATION_DIR=\"/Users/Joe/Work/iJoe.Co/Development/iJoe.Co\\ Developer/Library/${PROJECT_NAME}\"\n// END USER CONFIG\ncd \"${BUILD_DIR}/Documentation/\"\nmkdir -p \"$DESTINATION_DIR\"\ncp -fR \"publish/\" \"$DESTINATION_DIR\"\ncd $SOURCE_DIR\ncp -fR \"Documents/\" \"$DESTINATION_DIR\"\ncd \"$DESTINATION_DIR\"\nopen -a Terminal\nosascript -e 'tell application \"Terminal\" to do script \"cd '\"$DESTINATION_DIR\"'; nano '\"${PROJECT_NAME}\"'.xml\"'";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D8E45A9D18C8D96400BDA5A4 /* Sources */ = {
@@ -353,6 +396,20 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		D89737F918E3429B00F76C58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D89737FA18E3429B00F76C58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		D8E45AD718C8D96400BDA5A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -459,7 +516,7 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "JOECurrencyTextField/JOECurrencyTextField-Prefix.pch";
+				GCC_PREFIX_HEADER = "Demo/JOECurrencyTextField-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -481,7 +538,7 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "JOECurrencyTextField/JOECurrencyTextField-Prefix.pch";
+				GCC_PREFIX_HEADER = "Demo/JOECurrencyTextField-Prefix.pch";
 				INFOPLIST_FILE = "JOECurrencyTextFieldTests/JOECurrencyTextFieldTests-Info.plist";
 				PRODUCT_NAME = JOECurrencyTextFieldTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
@@ -492,6 +549,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D89737F818E3429B00F76C58 /* Build configuration list for PBXAggregateTarget "Documentation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D89737F918E3429B00F76C58 /* Debug */,
+				D89737FA18E3429B00F76C58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D8E45A9C18C8D96400BDA5A4 /* Build configuration list for PBXProject "JOECurrencyTextField" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
