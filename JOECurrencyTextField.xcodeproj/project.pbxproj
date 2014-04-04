@@ -49,7 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D89737F218E3429B00F76C58 /* AppledocSettings.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = AppledocSettings.plist; sourceTree = "<group>"; };
+		D89737F218E3429B00F76C58 /* AppledocSettings.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = AppledocSettings.plist; path = Documentation/AppledocSettings.plist; sourceTree = "<group>"; };
 		D89737F418E3429B00F76C58 /* Programming Guide-template.markdown */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Programming Guide-template.markdown"; path = "Documentation/Programming Guide-template.markdown"; sourceTree = "<group>"; };
 		D89737F518E3429B00F76C58 /* Setup Guide-template.markdown */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Setup Guide-template.markdown"; path = "Documentation/Setup Guide-template.markdown"; sourceTree = "<group>"; };
 		D89737F618E3429B00F76C58 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -334,7 +334,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/appledoc \\\n--output \"${BUILD_DIR}/Documentation/\" \\\n\"${PROJECT_DIR}/Documentation\" \\\n\"${PROJECT_DIR}\"\necho \"Documentation Output directory: ${BUILD_DIR}/Documentation/\"\n// USER CONFIG\nSOURCE_DIR=\"co.ijoe.${PROJECT_NAME}.docset/Contents/Resources/\"\nDESTINATION_DIR=\"/Users/Joe/Work/iJoe.Co/Development/iJoe.Co Developer/Library/${PROJECT_NAME}\"\n// END USER CONFIG\ncd \"${BUILD_DIR}/Documentation/\"\nmkdir -p \"$DESTINATION_DIR\"\ncp -fR \"publish/\" \"$DESTINATION_DIR\"\ncd $SOURCE_DIR\ncp -fR \"Documents/\" \"$DESTINATION_DIR\"\ncd \"$DESTINATION_DIR\"\nopen -a Terminal\nosascript -e 'tell application \"Terminal\" to do script \"cd '\"'$DESTINATION_DIR'\"'; nano '\"${PROJECT_NAME}\"'.xml\"'";
+			shellScript = "/usr/local/bin/appledoc \\\n--output \"${BUILD_DIR}/Documentation/\" \\\n\"${PROJECT_DIR}/Documentation\" \\\n\"${PROJECT_DIR}/${PROJECT_NAME}\"\necho \"Documentation Output directory: ${BUILD_DIR}/Documentation/\"\n// USER CONFIG\nSOURCE_DIR=\"co.ijoe.${PROJECT_NAME}.docset/Contents/Resources/\"\nDESTINATION_DIR=\"/Users/Joe/Work/iJoe.Co/Development/iJoe.Co Developer/Library/${PROJECT_NAME}\"\n// END USER CONFIG\ncd \"${BUILD_DIR}/Documentation/\"\nmkdir -p \"$DESTINATION_DIR\"\ncp -fR \"publish/\" \"$DESTINATION_DIR\"\ncd $SOURCE_DIR\ncp -fR \"Documents/\" \"$DESTINATION_DIR\"\ncd \"$DESTINATION_DIR\"\nopen -a Terminal\nosascript -e 'tell application \"Terminal\" to do script \"cd '\"'$DESTINATION_DIR'\"'; nano '\"${PROJECT_NAME}\"'.xml\"'";
 		};
 /* End PBXShellScriptBuildPhase section */
 
